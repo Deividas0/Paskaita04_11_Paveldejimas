@@ -7,4 +7,4 @@ public class Main {
     }
 }
 
-// Neisejo priskirti Skritulio atsakymo spausdinimo
+// Skritulio plota apskaičiuoti pavyko, bet neišeina perdaryti į BigDecimal

@@ -32,9 +32,8 @@ public class IOManager {
         }
         if (pasirinktaFigura == 3) {
             System.out.println("Įveskite spindulį: ");
-            int krastine1 = sc.nextInt();
-            this.
-            figura = new Skritulys(krastine1);
+            double skritulioSpindulys = sc.nextInt();
+            figura = new Skritulys(skritulioSpindulys);
         } else {
             System.out.println("Tokios figūros ploto skaičiuoti nemoku");
         }
@@ -43,7 +42,5 @@ public class IOManager {
     public void spausdinkPlota() {
         figura.skaiciuokPlota();
         System.out.println(figura);
-
-
     }
 }
