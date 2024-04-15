@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class IOManager {
@@ -41,6 +43,9 @@ public class IOManager {
 
     public void spausdinkPlota() {
         figura.skaiciuokPlota();
+        BigDecimal bd = new BigDecimal(figura.getPlotas());
+        bd = bd.setScale(2, RoundingMode.UP);
+        figura.setPlotas(Double.parseDouble(bd.toString()));
         System.out.println(figura);
     }
 }
